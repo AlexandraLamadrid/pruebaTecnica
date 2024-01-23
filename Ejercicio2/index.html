@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Personas Mayores de Edad</title>
+    <link rel="stylesheet" href="/Ejercicio2/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 2 - Prueba C-Pocket</h1>
+    </header>
+
+    <section>
+        <h2>Ingresa la información de las personas:</h2>
+        <form id="personasForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <button type="button" onclick="agregarPersona()">Agregar Persona</button>
+        </form>
+
+        <h2>Personas Mayores de Edad:</h2>
+        <ul id="listaPersonas"></ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 </p>
+    </footer>
+    <script src="/Ejercicio2/ejercicio2.js"></script>
+</body>
+</html>

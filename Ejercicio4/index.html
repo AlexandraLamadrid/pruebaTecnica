@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockUp</title>
+    <link rel="stylesheet" href="/Ejercicio4/styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="margin: 0;">MockUp</h1>
+    </header>
+
+    <section>
+        <h1>Ejercicio 4 - Prueba C-Pocket</h1>
+        <h2>Agregar Aplicación:</h2>
+        <form id="appForm">
+            <label for="nombreApp">Nombre de la App:</label>
+            <textarea id="nombreApp" name="nombreApp" rows="2" required></textarea>
+            
+            <label for="categoria">Selecciona una Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="Mensajeria">Mensajería</option>
+                <option value="RedesSociales">Redes Sociales</option>
+                <option value="Entretenimiento">Entretenimiento</option>
+                <option value="Entretenimiento">Otro</option>
+            </select>
+
+            <button type="button" onclick="agregarAplicacion()">Agregar</button>
+        </form>
+
+        <p style="margin-bottom: 10px; font-weight: bold;"># &nbsp; &nbsp; Objeto &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Categoria</p>
+        <ul id="listaAplicaciones"></ul>
+    </section>
+
+    <footer>
+        <p style="margin: 0;">&copy; 2024 - MockUp</p>
+    </footer>
+    <script src="/Ejercicio4/ejercicio4.js"></script>
+</body>
+</html>
